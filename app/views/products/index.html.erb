@@ -2,7 +2,9 @@
     <div class="row">
         <div class="col-sm-12">
             <h1>Products</h1>
-
+            <div class="links text-right">
+                <%= link_to 'New product', new_product_path, class: 'btn btn-primary'%>
+            </div>
             <table class="table">
                 <tr>
                     <th>ID</th>
@@ -11,12 +13,12 @@
                     <th>Description</th>
                 </tr>
                 <% @products.each do |product| %>
-                <tr>
-                    <td><%= product.id %></td>
-                    <td><%= product.name %></td>
-                    <td><%= product.url %></td>
-                    <td><%= product.description %></td>
-                </tr>
+                    <tr>
+                        <td><%= product.id %></td>
+                        <td><%= product.name %></td>
+                        <td><%= product.url %></td>
+                        <td><%= product.description %></td>
+                    </tr>
                 <% end %>
             </table>
         </div>
