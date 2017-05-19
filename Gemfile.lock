@@ -93,6 +93,7 @@ GEM
       mini_portile2 (~> 2.1.0)
     parser (2.4.0.0)
       ast (~> 2.2)
+    pg (0.20.0)
     powerpack (0.1.1)
     rack (2.0.3)
     rack-test (0.6.3)
@@ -114,6 +115,11 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.1.1)
       actionpack (= 5.1.1)
       activesupport (= 5.1.1)
@@ -181,7 +187,9 @@ DEPENDENCIES
   coffee-rails (~> 4.2, >= 4.2.1)
   jbuilder (~> 2.0)
   jquery-rails
+  pg
   rails (= 5.1.1)
+  rails_12factor
   rubocop
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
