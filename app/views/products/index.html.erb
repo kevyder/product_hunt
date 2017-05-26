@@ -2,9 +2,11 @@
     <div class="row">
         <div class="col-sm-12">
             <h1>Products</h1>
-            <div class="links text-right">
-                <%= link_to 'New product', new_product_path, class: 'btn btn-primary'%>
-            </div>
+            <% if signed_in? %>
+                <div class="links text-right">
+                    <%= link_to 'New product', new_product_path, class: 'btn btn-primary'%>
+                </div>
+            <% end %>
             <table class="table">
                 <tr>
                     <th>ID</th>
@@ -20,8 +22,10 @@
                         <td><%= product.url %></td>
                         <td><%= product.description %></td>
                         <td>
+                        <% if signed_in? %>
                             <%= link_to 'Edit', edit_product_path(product) %> |
                             <%= link_to 'Delete', product, method: :delete, data: { confirm: '¿Deseas eliminar este producto?'} %>
+                        <% end %>
                         </td>
                     </tr>
                 <% end %>

@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
+gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 
 group :development, :test do
   gem 'better_errors', '~> 2.1', '>= 2.1.1'

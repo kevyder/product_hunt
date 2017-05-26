@@ -94,6 +94,9 @@ GEM
       mini_portile2 (~> 2.1.0)
     parser (2.4.0.0)
       ast (~> 2.2)
+    passenger (5.1.4)
+      rack
+      rake (>= 0.8.1)
     pg (0.20.0)
     powerpack (0.1.1)
     rack (2.0.3)
@@ -189,6 +192,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2, >= 4.2.1)
   jbuilder (~> 2.0)
   jquery-rails
+  passenger (>= 5.0.25)
   pg
   rails (= 5.1.1)
   rails_12factor
