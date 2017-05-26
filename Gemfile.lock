@@ -69,6 +69,9 @@ GEM
     execjs (2.7.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
+    gravatar-ultimate (2.0.0)
+      activesupport (>= 2.3.14)
+      rack
     i18n (0.8.1)
     jbuilder (2.6.4)
       activesupport (>= 3.0.0)
@@ -190,6 +193,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   byebug
   coffee-rails (~> 4.2, >= 4.2.1)
+  gravatar-ultimate
   jbuilder (~> 2.0)
   jquery-rails
   passenger (>= 5.0.25)
