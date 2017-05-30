@@ -14,8 +14,8 @@ gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 gem 'gravatar-ultimate'
 gem 'annotate'
-gem 'paperclip', '~> 5.1'
-gem 'aws-sdk', '< 2.0'
+gem 'paperclip'
+gem 'aws-sdk'
 
 group :development, :test do
   gem 'better_errors', '~> 2.1', '>= 2.1.1'
