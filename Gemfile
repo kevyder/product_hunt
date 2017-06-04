@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '5.1.1'
-# bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'coffee-rails', '~> 4.2', '>= 4.2.1'
 gem 'jbuilder', '~> 2.0'
@@ -16,6 +15,7 @@ gem 'gravatar-ultimate'
 gem 'annotate'
 gem 'paperclip'
 gem 'aws-sdk'
+gem "figaro"
 
 group :development, :test do
   gem 'better_errors', '~> 2.1', '>= 2.1.1'
