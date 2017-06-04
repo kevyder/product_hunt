@@ -1,28 +1,19 @@
-== README
+== Product Hunt clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+2017/06/03
 
-Things you may want to cover:
+I used:
 
-* Ruby version
+* Ruby on Rails 5.1.1
 
-* System dependencies
+* Bootstrap 3.3.6
 
-* Configuration
+* Gravatar
 
-* Database creation
+* annotate
 
-* Database initialization
+* aws-sdk
 
-* How to run the test suite
+* figaro
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* rubocop

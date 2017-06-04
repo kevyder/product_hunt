@@ -16,17 +16,17 @@
 #
 
 class Product < ActiveRecord::Base
-    belongs_to :user
-    
-    has_many :comments
-    has_many :votes
-    
-    has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>" }
-    validates :name, presence: true
-    validates :url, presence: true
-    validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
-    
-    def voted_by?(user)
-        votes.exists?(user: user)
-    end
+  belongs_to :user
+
+  has_many :comments
+  has_many :votes
+
+  has_attached_file :image, styles: { medium: '300x300>', thumb: '100x100>' }
+  validates :name, presence: true
+  validates :url, presence: true
+  validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+
+  def voted_by?(user)
+    votes.exists?(user: user)
+  end
 end

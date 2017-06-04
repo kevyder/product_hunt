@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :private_access, except: [:index, :show]
+  before_action :private_access, except: %i[index show]
   def index
     @products = Product.all
   end
@@ -25,20 +25,20 @@ class ProductsController < ApplicationController
   def edit
     @product = Product.find(params[:id])
   end
-  
+
   def update
-      product = Product.find(params[:id])
-      if product.update(product_params)
-          redirect_to products_path
-      else
-          render :edit
-      end
-  end
-  
-  def destroy
-      product = Product.find(params[:id])
-      product.destroy
+    product = Product.find(params[:id])
+    if product.update(product_params)
       redirect_to products_path
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    product = Product.find(params[:id])
+    product.destroy
+    redirect_to products_path
   end
 
   private
