@@ -1,4 +1,4 @@
-== Product Hunt clone
+== Product Hunt
 
 2017/06/03
 
